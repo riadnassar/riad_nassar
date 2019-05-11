@@ -1,0 +1,761 @@
+/* ==========================================================================
+   Color
+   ========================================================================== */
+html {
+	/*Chalk White*/
+	--color-primary: #fefefa;
+	--color-primary-dark: #cbcbc7;
+	--color-primary-light: #fff;
+
+	/*Blueprint*/
+	--color-secondary: #001484;
+	--color-secondary-dark: #000056;
+	--color-secondary-light: #4c3db5;
+
+	/*Marker Black*/
+	--color-tertiary: #000;
+	--color-tertiary-light: #2c2c2c;
+
+	/*Disabled Text*/
+	--color-disabled-light: #555555;
+
+	/*Error Red*/
+	--color-error: #CE2029;
+
+}
+
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+html {
+	
+
+    --font-primary: 'Open Sans', Arial, sans-serif;
+    --font-secondary: 'Permanent Marker', cursive;
+
+    /*Font Sizes*/
+    --ratio: 1.1;
+
+    /*larger than normal*/
+	--xxxxxlarge-font: calc(var(--xxxxlarge-font) * var(--ratio));
+    --xxxxlarge-font: calc(var(--xxxlarge-font) * var(--ratio));
+    --xxxlarge-font: calc(var(--xxlarge-font) * var(--ratio));
+    --xxlarge-font: calc(var(--xlarge-font) * var(--ratio));
+    --xlarge-font: calc(var(--large-font) * var(--ratio));
+    --large-font: calc(var(--medium-font) * var(--ratio));
+    
+	/*normal font size*/
+    --medium-font: 1rem;
+    
+	/*smaller than normal*/
+    --small-font: calc(var(--medium-font) / var(--ratio));
+    --xsmall-font: calc(var(--small-font) / var(--ratio));
+    --xxsmall-font: calc(var(--xsmall-font) / var(--ratio));
+    --xxxsmall-font: calc(var(--xxsmall-font) / var(--ratio));
+    --xxxxsmall-font: calc(var(--xxxsmall-font) / var(--ratio));
+    --xxxxxsmall-font: calc(var(--xxxxsmall-font) / var(--ratio));
+
+	--margin-standard: 2.75rem 0 1rem;
+
+	color: var(--color-tertiary);
+	font-family: var(--font-primary);
+	font-size: var(--medium-font);
+}
+
+a {
+	color: var(--color-secondary);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--color-secondary-dark);
+}
+
+a:hover, a:focus {
+	color: var(--color-secondary-light);
+	outline: none;
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--color-primary-light);
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,text, .logo {
+	font-family: var(--font-secondary);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	line-height: 1.15;
+	margin: var(--margin-standard);
+}
+
+h1{
+	font-size: var(--xxxxxlarge-font);
+}
+
+h2{
+	font-size: var(--xxxxlarge-font);
+}
+
+h3{
+	font-size: var(--xxxlarge-font);
+}
+
+h4{
+	font-size: var(--xxlarge-font);
+}
+
+h5{
+	font-size: var(--xlarge-font);
+}
+
+h6{
+	font-size: var(--large-font);
+}
+
+p {
+	line-height: 2rem;
+}
+
+ol, ul {
+	list-style-position: inside;
+	margin-bottom: 0.625rem;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+blockquote {
+	font-family: var(--font-secondary);
+	font-size: var(--xlarge-font);
+}
+
+blockquote p {
+	line-height: 1.75;
+}
+
+cite {
+	font-size: var(--large-font);
+	font-style: normal;
+}
+
+label {
+	font-weight: bold;
+}
+
+.logo {
+	font-family: var(--font-secondary);
+	font-size: 6.25rem;
+}
+
+.featured-text {
+	font-size: var(--large-font);
+	font-style: italic;
+}
+
+.tertiary-text{
+	font-size: var(--small-font);
+}
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+.secondary-font{
+	font-family: var(--font-secondary);
+}
+
+@media (min-width: 600px) {
+	html {
+		--ratio: 1.250;
+	}
+}
+
+/* ==========================================================================
+   Master Layout
+   ========================================================================== */
+body {
+	margin: 0;
+}
+
+main {
+	margin: auto;
+	max-width: 20rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media (min-width: 480px) {
+	main {
+		margin: auto;
+		max-width: 25rem
+	}
+}
+
+@media (min-width: 600px) {
+	main {
+		margin: auto;
+		max-width: 35rem;
+	}
+}
+
+@media (min-width: 950px) {
+	main {
+		margin: auto;
+		max-width: 60rem;
+	}
+}
+
+/* ==========================================================================
+   Header Component
+   ========================================================================== */
+header {
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+	margin-bottom: 6.25rem;
+	padding-top: 2rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+	background-color: var(--color-secondary-dark);
+	color: var(--color-primary);
+	margin-top: 6.25rem;
+	padding: 2rem;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+nav{
+	padding-bottom: 2rem;
+}
+
+nav li {
+	margin: 0.625rem 0;
+}
+
+nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
+	color: var(--color-primary);
+}
+
+nav a:hover, nav a:focus {
+	background-color: var(--color-secondary);
+}
+
+nav a:active {
+	border: solid 0.0625rem var(--color-primary);
+}
+
+.primary-nav {
+	background-color: var(--color-secondary);
+}
+.primary-nav a, .secondary-nav a { 
+	display: inline-block;
+	padding: 0 0.625rem;
+}
+
+.primary-nav a:hover, .primary-nav a:focus, .secondary-nav a:hover, .secondary-nav a:focus {
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+}
+
+.primary-nav a:after, .secondary-nav a:after {
+	border-bottom: .125rem dashed var(--color-primary);
+	content: '';
+	display: block;
+	transition: width .5s ease;
+	width: 0;
+}
+
+.primary-nav a:hover:after, .primary-nav a:focus:after, .secondary-nav a:hover:after, .secondary-nav a:focus:after {
+	width: 100%; 
+}
+
+.primary-nav .current-page, .primary-nav .current-page:hover, .primary-nav .current-page:focus, .primary-nav .current-page:visited, .primary-nav .current-page:active {
+	background-color: transparent;
+	color: var(--color-primary);
+	font-family: var(--font-secondary);
+	outline: none;
+	text-decoration: none;
+}
+
+.secondary-nav {
+	background-color: var(--color-secondary-dark);
+}
+
+.secondary-nav ul {
+	padding: 0;
+}
+
+.secondary-nav li li {
+	padding-left: 1.250rem;
+}
+
+.secondary-nav a:active {
+	color: var(--color-primary-dark);
+}
+
+@media (min-width: 950px) {
+	.primary-nav li {
+		display: inline;
+		list-style-type: none;
+	}
+}
+
+/* ==========================================================================
+   Button Links
+   ========================================================================== */
+
+/*Hero Button*/
+.hero-button, .hero-button:visited {
+	background-color: var(--color-primary);
+	border: 0.0625rem solid var(--color-secondary);
+	color: var(--color-secondary);
+	font-weight: bold;
+	padding: 1rem 3rem;
+	transition: background-color .5s ease;
+}
+
+.hero-button:hover, .hero-button:focus {
+	background-color: var(--color-tertiary);
+	border: 0.0625rem solid var(--color-secondary);
+	color: var(--color-primary);
+	outline: none;
+	text-decoration: none;
+	transition: background-color .5s ease;
+}
+
+.hero-button:active {
+	background-color: var(--color-primary-dark);
+	color: var(--color-tertiary);
+}
+/*Normal Button*/
+
+.normal-button, .normal-button:visited {
+	background-color: var(--color-secondary);
+	border-radius: 0.625rem;
+	color: var(--color-primary);
+	padding: 1rem 1.5rem;
+	transition: all .5s ease;
+}
+
+.normal-button:hover, .normal-button:focus {
+	background-color: transparent;
+	border: 0.0625rem solid var(--color-secondary);
+	color: var(--color-secondary);
+	outline: none;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+.normal-button:active {
+	background-color: var(--color-secondary-dark);
+	color: var(--color-primary);
+}
+
+/*Ghost Button*/
+
+.ghost-button, .ghost-button:visited {
+	background-color: transparent;
+	border: 0.0625rem solid var(--color-secondary);
+	border-radius: 0.625rem;
+	box-shadow: inset 0 0 0 0 var(--color-secondary);
+	color: var(--color-secondary);
+	padding: 1rem 1.5rem;
+	transition: all 0.5s ease-out;
+}
+
+.ghost-button:hover, .ghost-button:focus {
+	box-shadow: inset 0 -6.25rem 0 0 var(--color-secondary);
+	color: var(--color-primary);
+	outline: none;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
+
+.ghost-button:active {
+	background-color: var(--color-tertiary);
+	box-shadow: inset 0 0 0 0 var(--color-secondary);
+	color: var(--color-primary);
+	transition: all 0.5s ease-out;
+}
+
+/* ==========================================================================
+   Accordion
+   ========================================================================== */
+
+details {
+	border: 0.125rem solid var(--color-secondary);
+	border-radius: 0.250rem;
+	margin-bottom: 0.125rem;
+	transition: height 1s ease;
+}
+
+details div {
+	margin: 1rem;
+}
+
+summary {
+	padding-left: 1rem;
+}
+
+.accordion {
+	background-color: var(--color-primary);
+	color: var(--color-tertiary);
+}
+
+.accordion summary::before {
+    content: url(../image/hammer-blue.png) " ";
+}
+
+.accordion summary {
+    list-style-type: none;
+}
+.accordion summary::-webkit-details-marker {
+     color: transparent;
+}
+
+.accordion[open] summary, .accordion summary:focus {
+	background-color: var(--color-secondary);
+	border-bottom: 0.125rem solid var(--color-secondary);
+	color: var(--color-primary);
+	outline: none;
+}
+
+.accordion summary:focus {
+	outline: none;
+}
+
+.accordion summary:focus::before {
+	display: inline-block;
+    animation: turn-back .5s;
+    content: url(../image/hammer-white.png) " ";
+}
+
+.accordion[open] summary::before {
+	animation: turn .5s;
+	content: url(../image/hammer-white.png) " ";
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+@keyframes turn {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(90deg);
+	}
+
+}
+
+@keyframes turn-back {
+	0% {
+		transform: rotate(90deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+
+/* ==========================================================================
+   Modal Component
+   ========================================================================== */
+dialog {
+	animation: unwrap 3s;
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+	max-width: 16.422875rem;
+}
+
+dialog h6, dialog p {
+	animation: fade 3.5s;
+}
+
+dialog::backdrop {
+	animation: fade .10s;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+@keyframes unwrap{
+	0% {
+		background-color: var(--color-secondary);
+		border-radius: .625rem;
+		box-shadow: none;
+		height: 8.1875rem;
+		width: .0000001rem;
+	}
+
+	99% {
+		background-color: var(--color-secondary);
+		box-shadow: none;
+		height: 8.1875rem;
+	}
+
+	100% {
+		height: 8.1875rem;
+		width: 16.422875rem;
+	}
+
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	85% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+/* ==========================================================================
+   Form Component
+   ========================================================================== */
+form {
+	border: 0.125rem solid var(--color-secondary-dark);
+	border-radius: 0.625rem;
+	padding: 1rem;
+}
+
+label {
+	margin: .625rem 0 0 0.625rem;
+}
+
+input, textarea, select {
+	border-radius: .625rem;
+	display: block;
+	margin: 0rem .625rem 0.625rem;
+}
+
+input {
+	min-height: 2rem;
+	min-width: 10rem;
+}
+
+button, input[type="submit"] {
+	min-height: 0;
+	min-width: 0;
+}
+
+textarea {
+	box-sizing: border-box;
+	max-width: 100%;
+	min-height: 5rem;
+	width: 25rem;
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+	border: .250rem solid var(--color-secondary-light);
+	outline: none;
+}
+
+input[placeholder], textarea[placeholder] {
+	padding-left: 0.3125rem;
+}
+
+input[disabled], textarea[disabled], select[disabled] {
+	background-color: var(--color-primary-dark);
+	color: var(--color-disabled);
+}
+
+.helper-text {
+	font-size: var(--small-font);
+	margin: 0rem 0rem 0rem 0.625rem;
+}
+
+.helper {
+	color: var(--color-tertiary-light);
+}
+
+.error {
+	border:.125rem solid var(--color-error);
+}
+
+button, input[type="submit"] {
+	background-color: var(--color-secondary);
+	border-radius: .625rem;
+	border: 0.0625rem solid var(--color-secondary);
+	color: var(--color-primary);
+	font-family: var(--font-primary);
+	font-size: var(--large-font);
+	margin: 0rem .625rem 0.625rem;
+	outline: none;
+	padding:.5rem 1rem;
+	text-transform: uppercase;
+	transition: all .5s ease;
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+	background-color: transparent;
+	border: 0.0625rem solid var(--color-secondary);
+	border-radius: 0.625rem;
+	color: var(--color-secondary);
+	transition: all .5s ease;
+}
+
+button:active, input[type="submit"]:active {
+	background-color: var(--color-secondary-dark);
+	color:var(--color-primary);
+	transition: all .5s ease;
+}
+
+/* ==========================================================================
+   Notifications
+   ========================================================================== */
+.notification {
+	align-items: center;
+	background-color: var(--color-primary-dark);
+	border: solid .0625rem var(--color-tertiary);
+	color: var(--color-tertiary);
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 1.25rem
+}
+
+.notification p {
+	padding-left: 1.25rem;
+}
+
+.notification-error {
+	background-color: var(--color-error);
+	border: solid .0625rem var(--color-tertiary);
+	color: var(--color-primary);
+}
+
+.notification-warning {
+	background-color: var(--color-tertiary);
+	border: solid .0625rem var(--color-tertiary);
+	color: var(--color-primary);
+}
+
+.notification-success {
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Hero Block
+   ========================================================================== */
+
+.hero {
+	align-items: center;
+	background-image: url(../image/fair-use-image.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	padding: 10rem 0;
+}
+
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.portfolio-item{
+	position: relative;
+}
+
+.info-card {
+	background-color: rgba(0,0,0,.5);
+	bottom: 0;
+	color: white;
+	display: none;
+	left: 0;
+	padding: 1rem;
+	position: absolute;
+	right: 0;
+}
+
+.portfolio-item:hover .info-card{
+	display: block;
+}
+
+.portfolio-item img {
+	width: 100%;
+
+}
+
+.call-to-action {
+	align-items: center;
+	border:  1rem dashed var(--color-secondary-light);
+	display: flex;
+	flex-direction: column;
+	max-width: 20rem;
+	padding: 1.25rem;
+}
+
+.call-to-action img {
+	padding-bottom: .625rem;
+}
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+.list-portfolio {
+	display: grid;
+	grid-gap: 3rem;
+	padding: .625rem;
+}
+
+.list-callouts {
+	display: grid;
+	grid-gap: 1rem;
+	margin: .625rem;
+}
+
+@media (min-width: 584px) {
+	.list-portfolio {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+@media (min-width: 1020px) {
+	.list-portfolio {
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	.list-callouts {
+		grid-template-columns: repeat(3,1fr); 
+	}
+}
+
+@media (min-width: 1350px) {
+	.list-portfolio {
+		grid-template-columns: repeat(4,1fr);
+	}
+}
+
+/* ==========================================================================
+   Example
+   ========================================================================== */
+figure {
+	border-right: .625rem dashed var(--color-secondary-dark);
+	border-left: .625rem dashed var(--color-secondary-dark);
+	padding: 1rem 2rem;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html lang="en-us">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Contact</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Permanent+Marker&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+	<body>
+		
+		<header>
+
+			<div class="logo">Riad Nassar</div>
+			<nav class="primary-nav">
+				
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a class="current-page" href="">Contact</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+			<h2>Got a Job? Want an Interveiw? Have a Question or Comment?</h2>
+
+			<p>Feel free to contact me about job offers, interviews or about this site.</p>
+
+			<form action="https://formspree.io/riad_nassar@yahoo.com" method="POST">
+
+					<label for="name">Name</label>
+					<p class="helper-text helper">Full Name</p required>
+					<input type="text" id="name" name="name" placeholder="First and Last Name">
+
+					<label for="subject">Subject</label>
+					<select id="subject" name="_subject" required>
+						<option value="" selected disabled hidden>Select one</option>
+						<option>Job Opportunity</option>
+						<option>Interview</option>
+						<option>Question or Comment About Site</option>
+					</select>
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" placeholder="Put your message here." required></textarea>
+
+					<input type="submit" value="Submit">
+
+				</form>
+		</main>
+
+		<footer class="tertiary-text">
+			<p>This site was created by Riad Nassar. Any similarities to other design systems is purely coincidental.</p>
+
+			<nav class="secondary-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Copyright -->
+			<p>Copyright 2019. All rights reserved</p>
+		</footer>
+
+	</body>
+</html>
