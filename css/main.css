@@ -408,6 +408,7 @@ details div {
 }
 
 summary {
+	color: var(--color-secondary);
 	padding-left: 1rem;
 }
 
@@ -760,5 +761,6 @@ figure {
 	border-right: .625rem dashed var(--color-secondary-dark);
 	display: flex;
 	flex-direction: column;
+	margin: 6.25rem 0;
 	padding: 1rem 2rem;
 }
