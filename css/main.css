@@ -706,6 +706,7 @@ button:active, input[type="submit"]:active {
 	border:  1rem dashed var(--color-secondary-light);
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	max-width: 20rem;
 	padding: 1.25rem;
 }
