@@ -242,7 +242,7 @@ nav{
 }
 
 nav li {
-	margin: 0.625rem 0;
+	margin: .625rem 0;
 }
 
 nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
@@ -254,7 +254,7 @@ nav a:hover, nav a:focus {
 }
 
 nav a:active {
-	border: solid 0.0625rem var(--color-primary);
+	border: solid .0625rem var(--color-primary);
 }
 
 .primary-nav {
@@ -262,7 +262,7 @@ nav a:active {
 }
 .primary-nav a, .secondary-nav a { 
 	display: inline-block;
-	padding: 0 0.625rem;
+	padding: 0 .625rem;
 }
 
 .primary-nav a:hover, .primary-nav a:focus, .secondary-nav a:hover, .secondary-nav a:focus {
@@ -321,7 +321,7 @@ nav a:active {
 /*Hero Button*/
 .hero-button, .hero-button:visited {
 	background-color: var(--color-primary);
-	border: 0.0625rem solid var(--color-secondary);
+	border: .0625rem solid var(--color-secondary);
 	color: var(--color-secondary);
 	font-weight: bold;
 	padding: 1rem 3rem;
@@ -330,7 +330,7 @@ nav a:active {
 
 .hero-button:hover, .hero-button:focus {
 	background-color: var(--color-tertiary);
-	border: 0.0625rem solid var(--color-secondary);
+	border: .0625rem solid var(--color-secondary);
 	color: var(--color-primary);
 	outline: none;
 	text-decoration: none;
@@ -345,7 +345,7 @@ nav a:active {
 
 .normal-button, .normal-button:visited {
 	background-color: var(--color-secondary);
-	border-radius: 0.625rem;
+	border-radius: .625rem;
 	color: var(--color-primary);
 	padding: 1rem 1.5rem;
 	transition: all .5s ease;
@@ -353,7 +353,7 @@ nav a:active {
 
 .normal-button:hover, .normal-button:focus {
 	background-color: transparent;
-	border: 0.0625rem solid var(--color-secondary);
+	border: .0625rem solid var(--color-secondary);
 	color: var(--color-secondary);
 	outline: none;
 	text-decoration: none;
@@ -369,12 +369,12 @@ nav a:active {
 
 .ghost-button, .ghost-button:visited {
 	background-color: transparent;
-	border: 0.0625rem solid var(--color-secondary);
-	border-radius: 0.625rem;
+	border: .0625rem solid var(--color-secondary);
+	border-radius: .625rem;
 	box-shadow: inset 0 0 0 0 var(--color-secondary);
 	color: var(--color-secondary);
 	padding: 1rem 1.5rem;
-	transition: all 0.5s ease-out;
+	transition: all .5s ease-out;
 }
 
 .ghost-button:hover, .ghost-button:focus {
@@ -382,14 +382,14 @@ nav a:active {
 	color: var(--color-primary);
 	outline: none;
 	text-decoration: none;
-	transition: all 0.5s ease-out;
+	transition: all .5s ease-out;
 }
 
 .ghost-button:active {
 	background-color: var(--color-tertiary);
 	box-shadow: inset 0 0 0 0 var(--color-secondary);
 	color: var(--color-primary);
-	transition: all 0.5s ease-out;
+	transition: all .5s ease-out;
 }
 
 /* ==========================================================================
@@ -397,9 +397,9 @@ nav a:active {
    ========================================================================== */
 
 details {
-	border: 0.125rem solid var(--color-secondary);
-	border-radius: 0.250rem;
-	margin-bottom: 0.125rem;
+	border: .125rem solid var(--color-secondary);
+	border-radius: .250rem;
+	margin-bottom: .125rem;
 	transition: height 1s ease;
 }
 
@@ -430,7 +430,7 @@ summary {
 
 .accordion[open] summary, .accordion summary:focus {
 	background-color: var(--color-secondary);
-	border-bottom: 0.125rem solid var(--color-secondary);
+	border-bottom: .125rem solid var(--color-secondary);
 	color: var(--color-primary);
 	outline: none;
 }
@@ -535,19 +535,19 @@ dialog::backdrop {
    Form Component
    ========================================================================== */
 form {
-	border: 0.125rem solid var(--color-secondary-dark);
-	border-radius: 0.625rem;
+	border: .125rem solid var(--color-secondary-dark);
+	border-radius: .625rem;
 	padding: 1rem;
 }
 
 label {
-	margin: .625rem 0 0 0.625rem;
+	margin: .625rem 0 0 .625rem;
 }
 
 input, textarea, select {
 	border-radius: .625rem;
 	display: block;
-	margin: 0rem .625rem 0.625rem;
+	margin: 0 .625rem .625rem;
 }
 
 input {
@@ -573,7 +573,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 input[placeholder], textarea[placeholder] {
-	padding-left: 0.3125rem;
+	padding-left: .3125rem;
 }
 
 input[disabled], textarea[disabled], select[disabled] {
@@ -583,7 +583,7 @@ input[disabled], textarea[disabled], select[disabled] {
 
 .helper-text {
 	font-size: var(--small-font);
-	margin: 0rem 0rem 0rem 0.625rem;
+	margin: 0 0 0 .625rem;
 }
 
 .helper {
@@ -597,11 +597,11 @@ input[disabled], textarea[disabled], select[disabled] {
 button, input[type="submit"] {
 	background-color: var(--color-secondary);
 	border-radius: .625rem;
-	border: 0.0625rem solid var(--color-secondary);
+	border: .0625rem solid var(--color-secondary);
 	color: var(--color-primary);
 	font-family: var(--font-primary);
 	font-size: var(--large-font);
-	margin: 0rem .625rem 0.625rem;
+	margin: 0 .625rem .625rem;
 	outline: none;
 	padding:.5rem 1rem;
 	text-transform: uppercase;
@@ -610,8 +610,8 @@ button, input[type="submit"] {
 
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
 	background-color: transparent;
-	border: 0.0625rem solid var(--color-secondary);
-	border-radius: 0.625rem;
+	border: .0625rem solid var(--color-secondary);
+	border-radius: .625rem;
 	color: var(--color-secondary);
 	transition: all .5s ease;
 }
@@ -697,6 +697,7 @@ button:active, input[type="submit"]:active {
 }
 
 .portfolio-item img {
+	height: 100%;
 	width: 100%;
 
 }
@@ -744,12 +745,6 @@ button:active, input[type="submit"]:active {
 
 	.list-callouts {
 		grid-template-columns: repeat(3,1fr); 
-	}
-}
-
-@media (min-width: 1350px) {
-	.list-portfolio {
-		/*grid-template-columns: repeat(4,1fr);*/
 	}
 }
 
