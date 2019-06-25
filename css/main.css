@@ -153,6 +153,7 @@ label {
 .logo {
 	font-family: var(--font-secondary);
 	font-size: 6.25rem;
+	margin: auto 6.25rem;
 }
 
 .featured-text {
@@ -259,6 +260,7 @@ nav a:active {
 
 .primary-nav {
 	background-color: var(--color-secondary);
+	margin: auto 6.25rem;
 }
 .primary-nav a, .secondary-nav a { 
 	display: inline-block;
