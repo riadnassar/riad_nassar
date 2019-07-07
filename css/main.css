@@ -156,6 +156,12 @@ label {
 	margin: auto 1.5625;
 }
 
+.logo a, .logo a:visited, .logo a:hover, .logo a:focus, .logo a:active {
+	color: var(--color-primary);
+	font-weight: normal;
+	text-decoration: none;
+}
+
 .featured-text {
 	font-size: var(--large-font);
 	font-style: italic;
