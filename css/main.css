@@ -294,6 +294,10 @@ nav a:active {
 	margin: auto 1.5625rem;
 }
 
+.primary-nav ul {
+	padding: 0;
+}
+
 .primary-nav li {
 	list-style-type: none;
 	display: inline;
