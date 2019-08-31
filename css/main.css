@@ -85,8 +85,12 @@ a:active {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6,text, .logo {
+.logo {
 	font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4, h5, h6,text {
+	font-family: var(--font-primary);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -157,7 +161,7 @@ label {
 }
 
 .logo a, .logo a:visited, .logo a:hover, .logo a:focus, .logo a:active {
-	color: var(--color-primary);
+	color: var(--color-tertiary);
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -196,7 +200,7 @@ label {
 	}
 
 	.logo {
-		font-size: 6.25rem;
+		font-size: 4.25rem;
 	}
 }
 
@@ -241,7 +245,7 @@ img {
    Header Component
    ========================================================================== */
 header {
-	background-color: var(--color-secondary);
+	/*background-color: var(--color-secondary);*/
 	color: var(--color-primary);
 	display: flex;
 	flex-direction: column;
@@ -261,13 +265,17 @@ header {
    Footer
    ========================================================================== */
 footer {
-	background-color: var(--color-secondary-dark);
-	color: var(--color-primary);
+	/*background-color: var(--color-secondary-dark);*/
+	color: var(--color-tertiary);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 6.25rem;
 	padding: 2rem;
+}
+
+footer p{
+	line-height: .5rem;
 }
 
 /* ==========================================================================
@@ -278,19 +286,19 @@ nav li {
 }
 
 nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
-	color: var(--color-primary);
+	color: var(--color-tertiary);
 }
 
 nav a:hover, nav a:focus {
-	background-color: var(--color-secondary);
+	/*background-color: var(--color-secondary);*/
 }
 
 nav a:active {
-	border: solid .0625rem var(--color-primary);
+	border: solid .0625rem var(--color-tertiary);
 }
 
 .primary-nav {
-	background-color: var(--color-secondary);
+	/*background-color: var(--color-secondary);*/
 	margin: auto 1.5625rem;
 }
 
@@ -314,7 +322,7 @@ nav a:active {
 }
 
 .primary-nav a:after, .secondary-nav a:after {
-	border-bottom: .125rem dashed var(--color-primary);
+	border-bottom: .125rem dashed var(--color-tertiary);
 	content: '';
 	display: block;
 	transition: width .5s ease;
@@ -327,14 +335,14 @@ nav a:active {
 
 .primary-nav .current-page, .primary-nav .current-page:hover, .primary-nav .current-page:focus, .primary-nav .current-page:visited, .primary-nav .current-page:active {
 	background-color: transparent;
-	color: var(--color-primary);
+	color: var(--color-tertiary);
 	font-family: var(--font-secondary);
 	outline: none;
 	text-decoration: none;
 }
 
 .secondary-nav {
-	background-color: var(--color-secondary-dark);
+	/*background-color: var(--color-secondary-dark);*/
 }
 
 .secondary-nav ul {
@@ -347,7 +355,15 @@ nav a:active {
 }
 
 .secondary-nav a:active {
-	color: var(--color-primary-dark);
+	color: var(--color-secondary);
+}
+
+.portfolio-nav .next {
+	float: right;
+}
+
+.portfolio-nav .previous {
+	float: left;
 }
 
 @media (min-width: 479px) {
@@ -445,7 +461,7 @@ nav a:active {
    ========================================================================== */
 
 details {
-	border: .125rem solid var(--color-secondary);
+	border: .125rem solid var(--color-tertiary);
 	border-radius: .250rem;
 	margin-bottom: .125rem;
 	transition: height 1s ease;
@@ -456,7 +472,7 @@ details div {
 }
 
 summary {
-	color: var(--color-secondary);
+	color: var(--color-tertiary);
 	padding-left: 1rem;
 }
 
@@ -465,16 +481,6 @@ summary {
 	color: var(--color-tertiary);
 }
 
-.accordion summary::before {
-    content: url(../image/hammer-blue.png) " ";
-}
-
-.accordion summary {
-    list-style-type: none;
-}
-.accordion summary::-webkit-details-marker {
-     color: transparent;
-}
 
 .accordion[open] summary, .accordion summary:focus {
 	background-color: var(--color-secondary);
@@ -487,18 +493,6 @@ summary {
 	outline: none;
 }
 
-.accordion summary:focus::before {
-	display: inline-block;
-    animation: turn-back .5s;
-    content: url(../image/hammer-white.png) " ";
-}
-
-.accordion[open] summary::before {
-	animation: turn .5s;
-	content: url(../image/hammer-white.png) " ";
-	display: inline-block;
-	transform: rotate(90deg);
-}
 
 @keyframes turn {
 	0% {
@@ -805,8 +799,8 @@ button:active, input[type="submit"]:active {
    ========================================================================== */
 figure {
 	align-items: center;
-	border-left: .625rem dashed var(--color-secondary-dark);
-	border-right: .625rem dashed var(--color-secondary-dark);
+/*	border-left: .15625rem dashed var(--color-tertiary);
+	border-right: .15625rem dashed var(--color-tertiary);*/
 	display: flex;
 	flex-direction: column;
 	margin: 6.25rem 0;
