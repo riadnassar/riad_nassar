@@ -162,6 +162,7 @@ label {
 	font-family: var(--font-secondary);
 	font-size: 3.125rem;
 	margin: auto 1.5625;
+	padding-left: 1rem;
 }
 
 .logo a, .logo a:visited, .logo a:hover, .logo a:focus, .logo a:active {
