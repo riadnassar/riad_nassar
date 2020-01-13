@@ -829,12 +829,34 @@ button:active, input[type="submit"]:active {
 .info-card {
 	/*background-color: rgba(0,0,0,.5);*/
 	/*bottom: 0;*/
+	background: linear-gradient(145deg,var(--color-primary-dark), var(--color-primary-light));
+	border-radius: 15px;
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
 	color: var(--color-tertiary);
 	/*display: none;*/
 	/*left: 0;*/
 	/*padding: 1rem;*/
 	/*position: absolute;*/
 	/*right: 0;*/
+}
+
+.info-card:active {
+	background: linear-gradient(325deg,var(--color-primary-dark), var(--color-primary-light));
+	/*box-shadow: -30px -30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);*/
+	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary);
+}
+
+.info-card h3, .info-card img, .info-card p{
+	margin: 1rem;
+}
+
+.info-card img {
+	max-width: 90%;
+	padding-top: 1rem;
+}
+
+.info-card p {
+	padding-bottom: 1rem;
 }
 
 .portfolio-item:hover .info-card{
