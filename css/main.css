@@ -3,7 +3,8 @@
    ========================================================================== */
 html {
 	/*Chalk White*/
-	--color-primary: #fefefa;
+	/*--color-primary: #fefefa;*/
+	--color-primary: #e6e6e6;
 	--color-primary-dark: #cbcbc7;
 	--color-primary-light: #fff;
 
@@ -24,7 +25,9 @@ html {
 
 }
 
-
+body {
+	/*background-color: var(--color-primary);*/
+}
 
 /* ==========================================================================
    Typography
@@ -263,7 +266,7 @@ img {
    Header Component
    ========================================================================== */
 header {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-light);
 	color: var(--color-primary);
 	display: flex;
 	flex-direction: row;
@@ -289,7 +292,7 @@ header {
    Footer
    ========================================================================== */
 footer {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-light);
 	color: var(--color-tertiary);
 	display: flex;
 	flex-direction: column;
@@ -310,9 +313,9 @@ nav li {
 }
 
 nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
-	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary-dark));
+	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary));
 	border-radius: .3575rem;
-	box-shadow: 10px 10px 20px var(--color-primary-dark), -10px -10px 20px var(--color-primary);
+	box-shadow: 10px 10px 20px var(--color-primary-dark), -10px -10px 20px var(--color-primary-light);
 	color: var(--color-tertiary);
 }
 
@@ -518,7 +521,7 @@ header .menu-icon {
 .normal-button, .normal-button:visited {
 	/*background-color: var(--color-secondary);*/
 	background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));
-	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	border-radius: .625rem;
 	color: var(--color-primary);
 	padding: 1rem 1.5rem;
@@ -528,8 +531,8 @@ header .menu-icon {
 
 .normal-button:hover, .normal-button:focus {
 	/*background-color: transparent;*/
-	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary-dark));
-	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);
+	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary));
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	/*border: .0625rem solid var(--color-secondary);*/
 	color: var(--color-secondary);
 	outline: none;
@@ -540,7 +543,7 @@ header .menu-icon {
 .normal-button:active {
 	/*background-color: var(--color-secondary-dark);*/
 	background: linear-gradient(180deg, var(--color-secondary-dark), var(--color-secondary));
-	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary);
+	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary-light);
 	color: var(--color-primary);
 }
 
@@ -577,8 +580,8 @@ header .menu-icon {
 
 details {
 	/*border: .125rem solid var(--color-tertiary);*/
-	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary-dark));
-	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);
+	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary));
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	border-radius: .250rem;
 	margin-bottom: .125rem;
 	transition: height 1s ease;
@@ -602,7 +605,7 @@ summary {
 .accordion[open] summary, .accordion summary:focus {
 	/*background-color: var(--color-secondary);*/
 	background: linear-gradient(145deg, var(--color-secondary-light), var(--color-secondary));
-	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	border-bottom: .125rem solid var(--color-secondary);
 	color: var(--color-primary);
 	outline: none;
@@ -697,8 +700,8 @@ dialog::backdrop {
    ========================================================================== */
 form {
 	/*border: .125rem solid var(--color-secondary-dark);*/
-	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary-dark));
-	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);
+	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary));
+	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary-light);
 	border-radius: .625rem;
 	padding: 1rem;
 }
@@ -760,7 +763,7 @@ input[disabled], textarea[disabled], select[disabled] {
 button, input[type="submit"] {
 	/*background-color: var(--color-secondary);*/
 	background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));
-	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	border-radius: .625rem;
 	border: .0625rem solid transparent;
 	color: var(--color-primary);
@@ -776,7 +779,7 @@ button, input[type="submit"] {
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
 	/*background-color: transparent;*/
 	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary-dark));
-	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);
+	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary-light);
 	/*border: .0625rem solid transparent;*/
 	border-radius: .625rem;
 	color: var(--color-secondary);
@@ -853,21 +856,21 @@ button:active, input[type="submit"]:active {
 .info-card {
 	/*background-color: rgba(0,0,0,.5);*/
 	/*bottom: 0;*/
-	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary-dark));
-	border-radius: .625rem;
-	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
+	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary));
+	border-radius: 3.625rem;
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	color: var(--color-tertiary);
 	/*display: none;*/
 	/*left: 0;*/
-	/*padding: 1rem;*/
+	padding: 1rem;
 	/*position: absolute;*/
 	/*right: 0;*/
 }
 
 .info-card:active {
-	background: linear-gradient(325deg,var(--color-primary-dark), var(--color-primary-light));
+	background: linear-gradient(325deg,var(--color-primary), var(--color-primary-light));
 	/*box-shadow: -30px -30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);*/
-	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary);
+	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary-light);
 }
 
 .info-card h3, .info-card img, .info-card p{
@@ -917,7 +920,7 @@ button:active, input[type="submit"]:active {
 
 .list-portfolio {
 	display: grid;
-	grid-gap: 3rem;
+	grid-gap: 6.25rem;
 	padding: .625rem;
 }
 
