@@ -701,7 +701,7 @@ dialog::backdrop {
 form {
 	/*border: .125rem solid var(--color-secondary-dark);*/
 	background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary));
-	box-shadow: -30px 30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary-light);
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	border-radius: .625rem;
 	padding: 1rem;
 }
