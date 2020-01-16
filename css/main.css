@@ -306,11 +306,11 @@ footer p{
    Navigation
    ========================================================================== */
 nav li {
-	margin: 0 .625rem;
+	padding: 1.25rem 1.875rem 1.25rem 0;
 }
 
 nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
-	background: linear-gradient(145deg,var(--color-primary-dark), var(--color-primary-light));
+	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary-dark));
 	border-radius: .3575rem;
 	box-shadow: 10px 10px 20px var(--color-primary-dark), -10px -10px 20px var(--color-primary);
 	color: var(--color-tertiary);
@@ -322,7 +322,7 @@ nav a:hover, nav a:focus {
 
 nav a:active {
 	/*border: solid .0625rem var(--color-tertiary);*/
-	background: linear-gradient(325deg,var(--color-primary-dark), var(--color-primary-light));
+	background: linear-gradient(325deg,var(--color-primary-light), var(--color-primary-dark));
 	/*box-shadow: -30px -30px 60px var(--color-primary-dark), 30px 30px 60px var(--color-primary);*/
 	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary);
 }
@@ -517,7 +517,7 @@ header .menu-icon {
 
 .normal-button, .normal-button:visited {
 	/*background-color: var(--color-secondary);*/
-	background: linear-gradient(180deg, var(--color-secondary), var(--color-secondary-light));
+	background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));
 	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
 	border-radius: .625rem;
 	color: var(--color-primary);
@@ -601,7 +601,7 @@ summary {
 
 .accordion[open] summary, .accordion summary:focus {
 	/*background-color: var(--color-secondary);*/
-	background: linear-gradient(145deg, var(--color-secondary), var(--color-secondary-light));
+	background: linear-gradient(145deg, var(--color-secondary-light), var(--color-secondary));
 	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
 	border-bottom: .125rem solid var(--color-secondary);
 	color: var(--color-primary);
@@ -759,7 +759,7 @@ input[disabled], textarea[disabled], select[disabled] {
 
 button, input[type="submit"] {
 	/*background-color: var(--color-secondary);*/
-	background: linear-gradient(180deg, var(--color-secondary), var(--color-secondary-light));
+	background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));
 	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
 	border-radius: .625rem;
 	border: .0625rem solid transparent;
@@ -785,7 +785,7 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
 
 button:active, input[type="submit"]:active {
 	/*background-color: var(--color-secondary-dark);*/
-	background: linear-gradient(180deg, var(--color-secondary-dark), var(--color-secondary));
+	background: linear-gradient(180deg, var(--color-secondary), var(--color-secondary-dark));
 	box-shadow: 0px 0px 0px var(--color-primary-dark), 0px 0px 0px var(--color-primary);
 	color:var(--color-primary);
 	transition: all .5s ease;
@@ -853,7 +853,7 @@ button:active, input[type="submit"]:active {
 .info-card {
 	/*background-color: rgba(0,0,0,.5);*/
 	/*bottom: 0;*/
-	background: linear-gradient(145deg,var(--color-primary-dark), var(--color-primary-light));
+	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary-dark));
 	border-radius: .625rem;
 	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary);
 	color: var(--color-tertiary);
