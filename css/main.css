@@ -26,7 +26,7 @@ html {
 }
 
 body {
-	/*background-color: var(--color-primary);*/
+	background-color: var(--color-primary);
 }
 
 /* ==========================================================================
@@ -166,6 +166,7 @@ label {
 	font-size: 3.125rem;
 	margin: auto 1.5625;
 	padding-left: 1rem;
+	padding-top: 1.25rem;
 }
 
 .logo a, .logo a:visited, .logo a:hover, .logo a:focus, .logo a:active {
@@ -223,6 +224,10 @@ main {
 	margin: auto;
 	margin-top: 15rem;
 	max-width: 20rem;
+	padding: 1rem;
+
+	border-radius: 3.625rem;
+	box-shadow: 5px 5px 5px var(--color-primary-dark) inset, -5px -5px 5px var(--color-primary-light) inset;
 }
 
 section {
@@ -242,7 +247,8 @@ img {
 	main {
 		margin: auto;
 		margin-top: 15rem;
-		max-width: 25rem
+		max-width: 25rem;
+		padding: 5rem;
 	}
 }
 
@@ -266,8 +272,8 @@ img {
    Header Component
    ========================================================================== */
 header {
-	background-color: var(--color-primary-light);
-	color: var(--color-primary);
+	background-color: var(--color-primary);
+	color: var(--color-tertiary);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -292,7 +298,7 @@ header {
    Footer
    ========================================================================== */
 footer {
-	background-color: var(--color-primary-light);
+	background-color: var(--color-primary);
 	color: var(--color-tertiary);
 	display: flex;
 	flex-direction: column;
@@ -315,7 +321,7 @@ nav li {
 nav a, nav a:hover, nav a:focus, nav a:visited, nav a:active{
 	background: linear-gradient(145deg,var(--color-primary-light), var(--color-primary));
 	border-radius: .3575rem;
-	box-shadow: 10px 10px 20px var(--color-primary-dark), -10px -10px 20px var(--color-primary-light);
+	box-shadow: 5px 5px 20px var(--color-primary-dark), -5px 0px 10px var(--color-primary-light);
 	color: var(--color-tertiary);
 }
 
@@ -337,7 +343,7 @@ nav a:active {
 
 .primary-nav ul {
 	overflow: hidden;
-	padding: 0;
+	padding: 1rem;
 }
 
 .primary-nav li {
@@ -386,6 +392,7 @@ header .menu-icon {
 	display: inline-block;
 	float: right;
 	padding: 28px 20px;
+	padding-top: 3rem;
 	position: relative;
 	user-select: none;
 }
@@ -930,7 +937,7 @@ button:active, input[type="submit"]:active {
 	margin: .625rem;
 }
 
-@media (min-width: 584px) {
+@media (min-width: 970px) {
 	.list-portfolio {
 		grid-template-columns: repeat(2,1fr);
 	}
@@ -956,5 +963,8 @@ figure {
 	display: flex;
 	flex-direction: column;
 	margin: 6.25rem 0;
-	padding: 1rem 2rem;
+	padding: 3rem 2rem;
+
+	border-radius: 3.625rem;
+	box-shadow: 5px 5px 5px var(--color-primary-dark) inset, -5px -5px 5px var(--color-primary-light) inset;
 }
