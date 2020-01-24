@@ -282,7 +282,7 @@ header {
 	justify-content: space-around;
 	/*align-items: center;*/
 	margin-bottom: 6.25rem;
-	padding-top: 2rem;
+	/*padding-top: 2rem;*/
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -291,12 +291,14 @@ header {
 }
 
 
-/*@media (min-width: 964px){
+@media (min-width: 964px){
 	header {
-		flex-direction: row;
-		justify-content: space-around;
+		/*flex-direction: row;
+		justify-content: space-around;*/
+		padding-top: 2rem;
+		position: fixed;
 	}
-}*/
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -346,7 +348,7 @@ nav a:active {
 
 .primary-nav ul {
 	overflow: hidden;
-	padding: 1rem;
+	/*padding: 1rem;*/
 }
 
 .primary-nav li {
