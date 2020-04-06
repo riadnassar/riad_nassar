@@ -1011,8 +1011,6 @@ button:active, input[type="submit"]:active {
 	max-width: 30rem;
 	padding: 2rem;
 	/*background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));*/
-	border-radius: 3.625rem;
-	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 }
 
 .call-to-action h4 {
@@ -1033,6 +1031,8 @@ button:active, input[type="submit"]:active {
 }
 
 .center {
+	border-radius: 3.625rem;
+	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
