@@ -1008,21 +1008,34 @@ button:active, input[type="submit"]:active {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/*max-width: 20rem;*/
-	padding: 1.25rem;
+	max-width: 30rem;
+	padding: 2rem;
 	/*background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));*/
 	border-radius: 3.625rem;
 	box-shadow: 30px 30px 60px var(--color-primary-dark), -30px -30px 60px var(--color-primary-light);
 }
 
 .call-to-action h4 {
-	color: var(--color-secondary);
+	color: var(--color-secondary-light);
 	font-weight: bold;
 	/*font-family: var(--font-secondary);*/
 }
 
 .call-to-action img {
 	padding-bottom: .625rem;
+}
+
+.call-to-action p {
+	text-align: center;
+	font-size: var(--xlarge-font);
+	font-style: italic;
+	padding-bottom: .625rem;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hide {
