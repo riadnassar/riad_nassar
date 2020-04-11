@@ -1020,7 +1020,7 @@ button:active, input[type="submit"]:active {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 30rem;
+	max-width: 40rem;
 	padding: 2rem;
 	/*background: linear-gradient(180deg, var(--color-secondary-light), var(--color-secondary));*/
 }
@@ -1038,7 +1038,7 @@ button:active, input[type="submit"]:active {
 .call-to-action p {
 	text-align: center;
 	font-size: var(--xlarge-font);
-	font-style: italic;
+	/*font-style: italic;*/
 	padding-bottom: .625rem;
 }
 
