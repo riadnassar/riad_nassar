@@ -24,12 +24,35 @@ html {
 	/*Error Red*/
 	--color-error: #CE2029;
 
+	/*scrollbar-color: var(--color-primary-dark) var(--color-tertiary);*/
+	scrollbar-color:  var(--color-tertiary) var(--color-primary-light);
+	scrollbar-width: thin;
+
 }
 
 body {
 	background-color: var(--color-primary-light);
 }
 
+ /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-primary-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-tertiary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
 /* ==========================================================================
    Typography
    ========================================================================== */
