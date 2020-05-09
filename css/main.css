@@ -169,19 +169,19 @@ ul {
 }
 
 blockquote {
-	display: flex;
+/*	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/*align-items: center;*/
+	align-items: center;
 	padding: 1.5rem 0 1.5rem 0rem;
-	/*border-radius: 3.625rem;*/
-	/*box-shadow: 5px 5px 5px var(--color-primary-dark) inset, -5px -5px 5px var(--color-primary-light) inset;*/
-	font-family: var(--font-secondary);
-	font-size: var(--xlarge-font);
-	/*overflow: wrap;*/
+	border-radius: 3.625rem;
+	box-shadow: 5px 5px 5px var(--color-primary-dark) inset, -5px -5px 5px var(--color-primary-light) inset;
+	overflow: wrap;
 	max-width: 21.875rem;
 	text-align: center;
-	/*float: right;*/
+	float: right;*/
+	font-family: var(--font-secondary);
+	font-size: var(--xlarge-font);
 }
 
 blockquote p {
@@ -292,6 +292,17 @@ img {
 .bio-pic {
 	float: right;
 	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*align-items: center;*/
+	padding: 1.5rem 0 1.5rem 0rem;
+	/*border-radius: 3.625rem;*/
+	/*box-shadow: 5px 5px 5px var(--color-primary-dark) inset, -5px -5px 5px var(--color-primary-light) inset;*/
+	/*overflow: wrap;*/
+	max-width: 21.875rem;
+	text-align: center;
+	/*float: right;*/
 }
 
 .bio-pic img {
