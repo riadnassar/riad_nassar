@@ -164,6 +164,10 @@ ol, ul {
 	/*padding-bottom: 0.625rem;*/
 }
 
+ol li{
+	padding-bottom: 0.625rem;
+}
+
 ul {
 	list-style-type: disc;
 }
@@ -1064,6 +1068,9 @@ button:active, input[type="submit"]:active {
 }
 .hero-7 {
 	background-image: url(../image/second_summer/second_summer_landscape_architect_austin.jpg);
+}
+.hero-8 {
+	background-image: url(../image/tutoring/ux_tutoring_service_home.png);
 }
 
 .hero h1, .hero p {
