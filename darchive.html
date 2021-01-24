@@ -44,16 +44,14 @@
 
 				<div class="portfolio-nav">
 					<a class="previous nav-button" href="phineas.html">Previous: Phineas</a>
-					<a class="next nav-button" href="landscaping_research.html">Up Next: DYI Landscapers</a>
+					<a class="next nav-button" href="second_summer.html">Up Next: Second Summer </a>
 				</div>
 				<!-- div class="top-img">
 					<img src="image/darchive/darchive-desktop.jpg" alt="D'Archive App">
 				</div>
  -->
-				<h4>Overview</h4>
-				<p>I was tasked to help UX students find good resources that can help them learn.  By the end, I used their knowledge of other products to help users adapt.</p>
-
-				<h4>Process</h4>
+				<h3>Problem</h3>
+				
 				<p>A student in the UX program at ACC has only about 4.5 months of total class time to learn a wide set of skills, tools and methods. On top of that, a search of UX resources brings up 228 million results. A student needs to sift through all of the information to find verified resources to help stay on top of it all and there is no way they could do it in such a short amount of time.</p>
 
 				<figure>
@@ -61,7 +59,10 @@
 					<figcaption><p class="featured-text">Results of "UX Resource" Google Search</p></figcaption>
 				</figure>
 
-				<p>The first step was to do some research. There were three questions I needed answered:</p>
+				<h3>Research</h3>
+				<h5>Plan</h5>
+
+				<p>There were three questions I needed answered:</p>
 
 				<ol>
 					<li>What resources are students looking for?</li>
@@ -69,51 +70,80 @@
 					<li>How are students using the resources?</li>
 				</ol> 
 
-				<p>After a few interviews with users, I made an empathy map to help organize what they said, which allowed me to extract some insights. I went with an empathy map because it was the tool I was most familiar with at the time. It's also pretty good at separating behaviors vs thoughts. A person can tell you one thing and do the opposite, so empathy maps will reflect this contradiction.</p>
+				<h5>Interviews</h5>
+				<p>I conducted 5 interviews that were 30min each. The participants were:</p>
+				
+				<ol>
+					<li>Between Ages 18-50</li>
+					<li>Austin Community College Students</li>
+				</ol>
+
+				<h5>Analyze</h5>
+				<p>To help organize the interviewees’ responses and allow me to extract some insights, I created an Empathy Map. I was able to separate behaviors from thoughts and find contradictions while also organizing common patterns.</p>
 
 				<figure>
 					<img src="image/darchive/Empathy-Map-Project_8.jpg" alt="Empathy Map">
 					<figcaption><p class="featured-text">Empathy Map</p></figcaption>
 				</figure>
 
-				<p>I was able to pull three insights out of my data. The first was students looked for things that would help them do work, usually through Google. Sometimes it was a tutorial on a tool, other times it was for inspiration. The second insight I found was that once they had completed their assignment, they never reused that resource. Since the resource was usually for a specific assignment or task, the students never had need to use it again. The final and most interesting insight I found was that the students wanted to share info but never did. This is because they were afraid they would annoy others if they sent mass emails with resources they used.</p>
+				<p>From the Empathy Map, I found three insights:</p>
 
-				<p>With these new insights, it was time to ideate. I had learned about Crazy Eight to generate ideas and wanted to try to use it. I came up with three ideas:
+				<ol>
+					<li>Students used Google to find things that would resources to help them do work, such as tutorials.</li>
+					<li>Since the resource was usually for a specific assignment or task, once an assignment was completed, students never reused that resource. </li>
+					<li>Students wanted to share info but never did because of a fear of annoying others with mass emails.</li>
+				</ol>
+
+				<h3>Solve</h3>
+
+				<h5>Ideate</h5>
+				<p>I took these insights and used Crazy Eight’s to ideate. I came up with three ideas: </p>
 					<ul>
 						<li>UX Wiki - A user created encyclopedia</li>
 						<li>Archive - A place to add resources for others to use</li>
 						<li>UX Social - A social media site for UX students</li>
 					</ul>
-				Of the three, the archive addressed the anxieties the students had about sharing. The idea is an archive like other schools but the students add things to it. This means students can share what they find with others and not annoy them. And so D’Archive was born.</p>
+				<p>Of the three, the archive addressed the anxieties the students had about sharing. The idea is an archive like other schools but the students add things to it. This means students can share what they find with others and not annoy them. And so D’Archive was born.</p>
 
 				<figure>
 					<img src="image/darchive/crazy8.jpg" alt="Crazy Eights">
 					<figcaption><p class="featured-text">Crazy Eights Results: UX Wiki (left), UX Archive (center), UX Social Media (Right)</p></figcaption>
 				</figure>
 
-				<p>There are two big parts of the archive: adding and searching. Adding allows the students to share what they found without fear of annoying others. Search is what lets the students find what they need. To help me plan out all the steps to search and add, I made a user flow to guide my design.</p>
+				<h5>Prototype</h5>
+				<p>Two main parts to the archive: adding a resource and finding a resource. The Add feature allows students to share resources without a fear of annoying others. The Search feature is what lets the students find what they need. To help me plan out all the steps to search and add, I made a user flow to guide my design.</p>
 
 				<figure>
 					<img src="image/darchive/User_Flow.jpg" alt="User Flow">
 					<figcaption><p class="featured-text">User Flow</p></figcaption>
 				</figure>
 
-				<p>So with an idea in hand and a flow as my guide, it was time to create, test and iterate. I started with sketching low-fidelity wireframes and conducted some testing. The tests seemed to indicate that my idea was sound, there were just a few tweaks that needed to reduce confusion, like how to add a Tag to a resource or giving them the ability to associate a course with a resource. I moved on to making mid-fidelity and high-fidielty wireframes, getting feedback on things like color. After a few more changes, I wanted to do one more test with a new set of users so that I could have a bit more robustness. I had been testing with the same set of users, which meant they were learning more as the process went on and thus were becoming too familiar with the product.</p>
+				<p>I based the minimalist design partially on Google’s Search Engine since my users were already familiar with it. The idea was if it looked like Google, people would treat it like Google, making the mental model a bit more predictable and allowing onboarding to be easier. For the Search, I created a search results page that allowed you to look at the resources while still being able to see the results. This means you can switch between two results without having to leave the page, saving the students time. The Add feature was a very basic form that you filled out. Some of the initial feedback was that adding Tags were not obvious and that users wanted a way to link resources with specific classes to make it easier for those who don’t know what to look for. So I added a little plus button for tags and a multi-checkbox for classes, since there are only a finite number of classes. I also added a feature Search by Class so that users can find resources based on a class instead of a topic.</p>
 
 				<figure>
 					<img src="image/darchive/product-evolution-2.png" alt="Evolution of D'Archive">
 					<figcaption><p class="featured-text">Low Fidelity (left), Mid-Fidelity (center), and High Fidelity (right) screens.</p></figcaption>
 				</figure>
 
-				<p>The goal of the test was to see if my design matched the users mental models. I ran five tests and found two big insights. First, users did not use "Search by Class" because they did not know what "Class" meant. This was while knowing that D’Archive was used to find resources for class. Second, the Tags made them self-conscious about their age. Our first tests were with younger user who had used tags before on social media. These were older users who never used tags before.</p>
+				<h5>Test</h5>
+				<p>I tested my design with a new group of users to see if it matched the users’ mental models. I again ran five tests with participants who were similar to my interviewees and found two big insights:</p>
 
-				<h4>Outcome</h4>
-				<p>At the end of this project, I had a deeper understanding of how students look for resources to help with their education. Given this information, my design was able to leverage their preexisting knowledge as well as their desire to share. The next steps are to address the issues with the words "class" and "tags". I will need something that makes class less ambiguous and some way of explaining tags.</p>
+				<ol>
+					<li>Users did not use "Search by Class" because they did not understand what "Class" meant despite knowing that D’Archive was used schoolwork.</li>
+					<li>Tags made older users self-conscious about their age since they were not used to using them but knew younger people did.</li>
+				</ol>
+				
+				<h3>Outcome</h3>
 
-				<h4>Retrospective</h4>
+				<p>At the end of this project, I had a deeper understanding of how students look for resources to help with their education. Given this information, my design was able to leverage their preexisting knowledge as well as their desire to share. </p>
+
+				<h5>Next Steps</h5>
+				<p>The next steps are to address the issues with the words "class" and "tags". I will need something that makes class less ambiguous and some way of explaining tags.</p>
+
+				<h3>Retrospective</h3>
 				<p> A lot of things went well with this project. My users gave me a lot of good feedback and my insights from the Empathy Map allowed guided decisions on features. My User flow was also a great asset in determining features. I would like to update and test my High-fidelity one more time. I would also like to get more users and even identify any secondary users I overlooked.</p>
 
-				<p>It is important to note that while my users liked how my product worked, I don’t think I could legally make it. The resources being added likely have ads on the original source (like on a blog or on youtube), and this would circumvent those ads. Also given that the EU passed Article 13, which requires platforms to be strict in preventing the unauthorized use of copywritten material, the school could get in trouble if such material is added as a resource. Future iterations would need to address this very big issue.</p>
+				<p>It is important to note that while my users liked how my product worked, I don’t think I could legally make it. The resources being added likely have ads on the original source (like on a blog or on YouTube), and this would circumvent those ads. Also given that the EU passed Article 13, which requires platforms to be strict in preventing the unauthorized use of copywritten material, the school could get in trouble if such material is added as a resource. Future iterations would need to address this very big issue.</p>
 				
 			</section>
 
@@ -128,7 +158,7 @@
 			<section>
 				<div class="portfolio-nav">
 					<a class="previous nav-button" href="phineas.html">Previous: Phineas</a>
-					<a class="next nav-button" href="landscaping_research.html">Up Next: DYI Landscapers</a>
+					<a class="next nav-button" href="second_summer.html">Up Next: Second Summer </a>
 				</div>
 			</section>
 

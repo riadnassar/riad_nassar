@@ -164,7 +164,7 @@ ol, ul {
 	/*padding-bottom: 0.625rem;*/
 }
 
-ol li{
+ol li, ul li{
 	padding-bottom: 0.625rem;
 }
 
