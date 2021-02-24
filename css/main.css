@@ -1057,7 +1057,7 @@ button:active, input[type="submit"]:active {
 .hero-3 {
 	background-image: url(../image/enter-digital-age.png);
 }
-.hero-4 {
+/*.hero-4 {
 	background-image: url(../image/phineas/phineas.jpg);
 }
 .hero-5 {
@@ -1071,6 +1071,15 @@ button:active, input[type="submit"]:active {
 }
 .hero-8 {
 	background-image: url(../image/tutoring/ux_tutoring_service_home.png);
+}*/
+
+.portfolio-hero {
+	display: flex;
+	justify-content: center;
+}
+.portfolio-hero img {
+	margin-top: 10rem;
+	max-height: 40rem;
 }
 
 .hero h1, .hero p {
