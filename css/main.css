@@ -1267,5 +1267,12 @@ figure {
 }
 
 figure img {
-	max-width: 70%;
+	max-width: 95%;
+}
+.figure-group {
+	align-items: baseline;
+/*	border-left: .15625rem dashed var(--color-tertiary);
+	border-right: .15625rem dashed var(--color-tertiary);*/
+	display: flex;
+	margin: 3.25rem 0;
 }
