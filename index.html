@@ -42,7 +42,14 @@
 
 				<h2>About</h2>
 
-				<div class="figure-group">
+				<div class="about">
+					<figure>
+					<blockquote class="bio-pic">
+						<img src="image/riad_nassar.jpg" alt="Riad Nassar">
+						<p>Some People Like to compete. I like to Cooperate.</p>
+						<cite>-Riad Nassar</cite>
+					</blockquote>
+					</figure>
 
 					<figure>
 					<p>Howdy!</p>
@@ -51,13 +58,6 @@
 					<p id="portfolio">When I'm not busy designing, I judge robotics competitions in Central Texas.</p>
 					</figure>
 
-					<figure>
-					<blockquote class="bio-pic">
-						<img src="image/riad_nassar.jpg" alt="Riad Nassar">
-						<p>Some People Like to compete. I like to Cooperate.</p>
-						<cite>-Riad Nassar</cite>
-					</blockquote>
-					</figure>
 					
 				</div>
 			</section>
@@ -91,56 +91,78 @@
 					</a> -->
 
 					
-					<div class="portfolio-item">
+					<a class="portfolio-item" href="darchive.html">
 
-						<div class="info-card">
+						<div class="info-card" >
 							<div class="info-card-text">
+								<img src="image/darchive/darchive-computer_home.jpg" alt="D'Archive">
 								<h4>D'Archive<br></h4>
 								<p>UX Resource Archive for Community College</p>
-								<a  class="normal-button" href="darchive.html"> Learn More</a>
+								<p  class="normal-button" > Learn More</p>
 							</div>
-							<img src="image/darchive/darchive-computer_home.jpg" alt="D'Archive">
 						</div>
 
-					</div>
+					</a>
 
-					<div class="portfolio-item">
+					<a class="portfolio-item" href="second_summer.html">
 						<div class="info-card">
 							<div class="info-card-text">
-								<h4>Second<br>Summer</h4>
-								<p>Helping a Small Business with their Website</p>
-								<a class="normal-button" href="second_summer.html"> Learn More</a>
+								<img src="image/second_summer/second_summer_landscape_architect_austin.jpg" alt="Enjoy Second Summer">
+								<h4>Second Summer</h4>
+								<p>A Local Landscaping Architect's Website</p>
+								<p class="normal-button" > Learn More</p>
 							</div>
-							<img src="image/second_summer/second_summer_landscape_architect_austin.jpg" alt="Enjoy Second Summer">
 						</div>
-					</div>
+					</a>
 
-					<div class="portfolio-item">
+					<a class="portfolio-item" href="ux_tutoring_service.html">
 						<div class="info-card">
 							<div class="info-card-text">
-								<h4>UX<br>Tutoring<br>Service</h4>
+								<img src="image/tutoring/ux_tutoring_service_home.png" alt="UX Tutoring Service">
+								<h4>Co-Lab</h4>
 								<p>Redesigning Help For Community College</p>
-								<a class="normal-button" href="ux_tutoring_service.html"> Learn More</a>
+								<p class="normal-button" > Learn More</p>
 							</div>
-							<img src="image/tutoring/ux_tutoring_service_home.png" alt="UX Tutoring Service">
 						</div>
-					</div>
+					</a>
 
 				</div>
 
 			</section>
 
-			<section class="center">
-				<div class="call-to-action">
-					<h4>Need a UX or Service Designer?</h4>
-					<p> I can elevate products or service, bring in customers, and improve your organization. Just click the button below to get started.</p>
-					<a class="cta-button" href="contact.html">Get Help Now</a>
-				</div>
-			</section>
 
 		</main>
 
 		<footer class="tertiary-text">
+			<section class="center">
+				<div class="call-to-action">
+					<h4>Need a UX or Service Designer?</h4>
+					<p> I can elevate products and services, bring in customers, and improve your organization. Just click the button below to get started.</p>
+				</div>
+					<form action="https://formspree.io/riad_nassar@yahoo.com" method="POST">
+
+						<label for="name">Name</label>
+						<p class="helper-text helper">Full Name</p>
+						<input type="text" id="name" name="name" placeholder="First and Last Name" required>
+
+						<label for="email">Email</label>
+						<input type="email" id="email" name="_replyto" placeholder="example@example.com" required>
+
+						<label for="subject">Subject</label>
+						<select id="subject" name="_subject" required>
+							<option value="" selected disabled hidden>Select one</option>
+							<option>Job Opportunity</option>
+							<option>Interview</option>
+							<option>Question or Comment About Site</option>
+						</select>
+
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Put your message here." required></textarea>
+
+						<input type="submit" value="Submit">
+
+				</form>
+			</section>
 <!-- 			<nav class="secondary-nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -150,7 +172,7 @@
 			</nav> -->
 			
 			<!-- Copyright -->
-			<p>Copyright 2019. All rights reserved</p>
+			<p>Copyright 2022. All rights reserved</p>
 
 			<p>This site was created by Riad Nassar. Any similarities to other design systems is purely coincidental.</p>
 

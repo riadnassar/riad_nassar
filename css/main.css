@@ -74,7 +74,7 @@ html {
     --large-font: calc(var(--medium-font) * var(--ratio));
     
 	/*normal font size*/
-    --medium-font: 1.15rem;
+    --medium-font: 1rem;
     
 	/*smaller than normal*/
     --small-font: calc(var(--medium-font) / var(--ratio));
@@ -131,6 +131,7 @@ h1,h2,h3,h4,h5 {
 h1{
 	font-size: var(--xxxxxlarge-font);
 	text-align: center;
+	font-weight: bold;
 }
 
 h2{
@@ -287,8 +288,8 @@ main {
 }
 
 section {
-	margin-bottom: 4.575rem;
-	padding-bottom: 5rem;
+	margin-bottom: 1rem;
+	/*padding-bottom: 5rem;*/
 }
 
 img {
@@ -907,6 +908,7 @@ form {
 
 label {
 	margin: .625rem 0 0 .625rem;
+	color: var(--color-tertiary);
 }
 
 input, textarea, select {
@@ -1055,35 +1057,55 @@ button:active, input[type="submit"]:active {
 
 .hero-2 {
 	background-image: url(../image/whiteboard_resume.jpeg);
+	background-position: center;
 }
 
 .hero-3 {
 	background-image: url(../image/enter-digital-age.png);
+	background-position: center;
 }
 /*.hero-4 {
 	background-image: url(../image/phineas/phineas.jpg);
-}
+}*/
 .hero-5 {
 	background-image: url(../image/darchive/darchive-computer1.jpg);
+	background-position: center;
 }
-.hero-6 {
+/*.hero-6 {
 	background-image: url(../image/landscape/lawnmower-384589_1920.jpg);
-}
+}*/
 .hero-7 {
 	background-image: url(../image/second_summer/second_summer_landscape_architect_austin.jpg);
+	background-position: center;
 }
 .hero-8 {
 	background-image: url(../image/tutoring/ux_tutoring_service_home.png);
-}*/
+	background-position: center;
+}
 
 .portfolio-hero {
 	display: flex;
 	justify-content: center;
+	height: 78vh;
 }
 .portfolio-hero img {
 	margin-top: 10rem;
 	max-height: 40rem;
 }
+.portfolio-hero-title {
+	margin-top: 39vh;
+	background-color: var(--color-secondary-light);
+	padding: 10px 15rem 5px;
+	height: 20%;
+}
+.portfolio-hero h1{
+	position: absolute;
+	opacity: 100%;
+	margin-top: 39vh;
+	top: 2.5rem;
+	color: var(--color-primary);
+}
+
 
 .hero h1, .hero p {
 	font-weight: bold;
@@ -1099,21 +1121,25 @@ button:active, input[type="submit"]:active {
    ========================================================================== */
 .portfolio-item{
 	/*position: fixed;*/
-	margin-bottom: 5rem;
+	margin: 2.5rem;
 	display: flex;
 }
 
 
 .info-card {
-	background-color: var(--color-tertiary);
+	/*background-color: var(--color-tertiary);*/
 	display: flex;
 	/*flex-direction: column;*/
 	align-items: center;
 	text-align: center;
 	/*background-color: rgba(0,0,0,1);*/
 
-	color: var(--color-primary-light);
+	color: var(--color-tertiary);
 	box-shadow: 2px 2px 6px 0 rgba(0,0,0,.3), -1px -1px 6px rgba(0,0,0,.3);
+	border-style: groove;
+	border-radius: 10px;
+
+	width: 21.875rem;
 
 }
 
@@ -1123,7 +1149,8 @@ button:active, input[type="submit"]:active {
 }
 
 .info-card-text .normal-button:hover, .info-card-text .normal-button:focus {
-	color: var(--color-tertiary);
+	color: var(--color-primary);
+	background-color: var(--color-tertiary);
 }
 
 .info-card-text h4 {
@@ -1177,6 +1204,7 @@ button:active, input[type="submit"]:active {
 	font-size: var(--xlarge-font);
 	/*font-style: italic;*/
 	padding-bottom: .625rem;
+	line-height: 1.5rem;
 }
 
 .center {
@@ -1230,7 +1258,7 @@ button:active, input[type="submit"]:active {
 */
 @media (min-width: 1020px) {
 	.list-portfolio {
-		/*grid-template-columns: repeat(2, 1fr);*/
+		flex-direction: row;
 	}
 
 	.list-callouts {
@@ -1263,7 +1291,20 @@ figure img {
 	border-right: .15625rem dashed var(--color-tertiary);*/
 	display: grid;
 	/*margin: 3.25rem 0;*/
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 2rem;
 
+
+}
+
+
+@media (min-width: 1020px) {
+	.figure-group {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2rem;
+	}
+
+	.about{
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-column-gap: 2rem;
+	}
 }
