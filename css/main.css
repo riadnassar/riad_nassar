@@ -1064,9 +1064,10 @@ button:active, input[type="submit"]:active {
 	background-image: url(../image/enter-digital-age.png);
 	background-position: center;
 }
-/*.hero-4 {
-	background-image: url(../image/phineas/phineas.jpg);
-}*/
+.hero-4 {
+	background-image: url(../image/disney_planner/alexa_hero.jpg);
+	background-position: center;
+}
 .hero-5 {
 	background-image: url(../image/darchive/darchive-computer1.jpg);
 	background-position: center;
@@ -1256,13 +1257,22 @@ button:active, input[type="submit"]:active {
 	}
 }
 */
-@media (min-width: 1020px) {
+@media (min-width: 1000px) {
 	.list-portfolio {
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(2,1fr); 
 	}
 
 	.list-callouts {
-		grid-template-columns: repeat(3,1fr); 
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+@media (min-width: 1700px) {
+	.list-portfolio {
+		display:flex;
+		flex-direction: row;
 	}
 }
 
